@@ -21,6 +21,25 @@ def lucky_color(n):
 def compare_lpn(dob1, dob2):
     return lpn(dob1) == lpn(dob2)
 
+def get_gen(birthday):
+    birth_year = birthday.year
+    if 1901 <= birth_year <= 1927:
+        return "Greatest Generation"
+    elif 1928 <= birth_year <= 1945:
+        return "Silent Generation"
+    elif 1946 <= birth_year <= 1964:
+        return "Baby Boomers"
+    elif 1965 <= birth_year <= 1980:
+        return "Generation X"
+    elif 1981 <= birth_year <= 1996:
+        return "Millennials"
+    elif 1997 <= birth_year <= 2012:
+        return "Generation Z"
+    elif 2013 <= birth_year <= 2024:
+        return "Generation Alpha"
+    else:
+        return "Unknown Generation"
+
 def main():
     while True:
         print("""
@@ -30,6 +49,7 @@ def main():
             2. Check if a number is a master number
             3. Get the lucky color based on Life Path Number
             4. Compare Life Path Numbers of two birthdays
+            5. Determine the generation of a person
             0. Exit
         """)
         choice = input("Enter your choice: ")
@@ -46,6 +66,9 @@ def main():
             dob1 = datetime.datetime.strptime(input("Enter the first birthday (YYYY-MM-DD): "), "%Y-%m-%d")
             dob2 = datetime.datetime.strptime(input("Enter the second birthday (YYYY-MM-DD): "), "%Y-%m-%d")
             print(f"Life Path Numbers are the same: {compare_lpn(dob1, dob2)}")
+        elif choice == "5":
+            dob = datetime.datetime.strptime(input("Enter your birthday (YYYY-MM-DD): "), "%Y-%m-%d")
+            print(f"You are a {get_gen(dob)}")
         elif choice == "0":
             exit()
         else:
