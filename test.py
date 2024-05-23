@@ -3,7 +3,6 @@ import datetime
 from main import lpn, is_master, lucky_color, compare_lpn, get_gen
 
 class TestNumerology(unittest.TestCase):
-
     def test_lpn(self):
         self.assertEqual(lpn(datetime.date(1990, 4, 15)), 11)  
         self.assertEqual(lpn(datetime.date(1985, 12, 30)), 11)  
