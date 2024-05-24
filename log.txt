@@ -1,0 +1,108 @@
+Last login: Fri May 24 17:42:10 on console
+/Users/siranjevigv/.zprofile:1: no such file or directory: /opt/homebrew/bin/brew
+/Users/siranjevigv/.zshrc:1: command not found: echohi
+siranjevigv@siranjevigvMAC ~ % cd curtin/ise 
+siranjevigv@siranjevigvMAC ise % ls
+Krishnan_Siranjevi_21274501_ISErepo test.py
+siranjevigv@siranjevigvMAC ise % cd Krishnan_Siranjevi_21274501_ISErepo 
+siranjevigv@siranjevigvMAC Krishnan_Siranjevi_21274501_ISErepo % ls
+README.md   __pycache__ images      main.py     test.py
+siranjevigv@siranjevigvMAC Krishnan_Siranjevi_21274501_ISErepo % ls
+README.md   __pycache__ images      main.py     test.py
+siranjevigv@siranjevigvMAC Krishnan_Siranjevi_21274501_ISErepo % touch report.md
+siranjevigv@siranjevigvMAC Krishnan_Siranjevi_21274501_ISErepo % code .
+siranjevigv@siranjevigvMAC Krishnan_Siranjevi_21274501_ISErepo % git fetch
+siranjevigv@siranjevigvMAC Krishnan_Siranjevi_21274501_ISErepo % git status
+On branch main
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	report.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+siranjevigv@siranjevigvMAC Krishnan_Siranjevi_21274501_ISErepo % git status
+On branch main
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	report.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+siranjevigv@siranjevigvMAC Krishnan_Siranjevi_21274501_ISErepo % git pull
+Updating 229f043..c569335
+Fast-forward
+ README.md | 81 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--
+ 1 file changed, 79 insertions(+), 2 deletions(-)
+siranjevigv@siranjevigvMAC Krishnan_Siranjevi_21274501_ISErepo % sl
+zsh: command not found: sl
+siranjevigv@siranjevigvMAC Krishnan_Siranjevi_21274501_ISErepo % ls
+README.md   __pycache__ images      main.py     report.md   test.py
+siranjevigv@siranjevigvMAC Krishnan_Siranjevi_21274501_ISErepo % git log
+
+Author: 21cb54siranjevi <siranjevi.k2021@kgkite.ac.in>
+commit 0134b51caf26ee977bfa534dbc07fb3595fb40aa
+Author: 21cb54siranjevi <siranjevi.k2021@kgkite.ac.in>
+Date:   Fri May 24 06:46:27 2024 +0800
+
+    uploads on output pictures and README.md update
+
+commit 7072764010ece118d356fad4538f7eee3f66ca98
+Merge: c3f4b66 31fd476
+Author: Siranjevi K <94344801+SiranjeviKrishnan@users.noreply.github.com>
+Date:   Fri May 24 06:00:35 2024 +0800
+
+    Merge pull request #6 from SiranjeviKrishnan/test
+    
+    Merge Test and
+
+commit 31fd47655e2a0767b43419b83e997b1a106ae9bf (origin/test, test)
+Author: 21cb54siranjevi <siranjevi.k2021@kgkite.ac.in>
+Date:   Fri May 24 05:57:42 2024 +0800
+
+    final test code
+
+commit dea5c27566862a4507c602eb042939151df57eba
+Author: 21cb54siranjevi <siranjevi.k2021@kgkite.ac.in>
+Date:   Wed May 22 14:01:57 2024 +0800
+
+    test case code for main.py program to automate the unittest
+
+commit a0779f705a6adcafbaca4098205fd41c3d93e712
+Author: 21cb54siranjevi <siranjevi.k2021@kgkite.ac.in>
+Date:   Tue May 21 15:06:33 2024 +0800
+
+    create file for test_case for main.py at main branch
+
+commit c3f4b6665bcf505c0a5a31925f46ab0c36ac7288
+Author: 21cb54siranjevi <siranjevi.k2021@kgkite.ac.in>
+Date:   Tue May 21 15:02:55 2024 +0800
+
+
+commit f558c32cf319c80f1d5f2219417b95758d479326
+Author: 21cb54siranjevi <siranjevi.k2021@kgkite.ac.in>
+Date:   Tue May 21 15:00:13 2024 +0800
+
+    completion on get generation function and main func updates
+
+commit 12be7d94abd2f98913b445c8b25274ddf45b1c03
+Author: 21cb54siranjevi <siranjevi.k2021@kgkite.ac.in>
+Date:   Tue May 21 14:53:32 2024 +0800
+
+ Number Calculation Todo's
+
+commit b2e8c8d2dc569dad5f76ed9de84d1c80d8dbcf7a
+Author: 21cb54siranjevi <siranjevi.k2021@kgkite.ac.in>
+Date:   Tue May 21 00:18:25 2024 +0800
+
+    Upload on main.py, which contains main python programming file
+
+commit 4195174559a670ad3cfa5f9efbb2a17e9932aac5
+Author: Siranjevi K <94344801+SiranjeviKrishnan@users.noreply.github.com>
+Date:   Mon May 20 23:55:54 2024 +0800
+
+    Initial commit
+(END)
