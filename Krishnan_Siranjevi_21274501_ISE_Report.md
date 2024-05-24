@@ -214,29 +214,30 @@ Black box testing techniques, such as Equivalence Partitioning (EP) and Boundary
 
 ## White Box Testing
 
-### lpn Module
+# lpn Module Test Cases
 
-    | Path | Test Data | Expected Results |
-    |------|-----------|-------------------|
-    | Pass into the def function and calculate LPN for a valid date | 1990-04-15 | 11 |
-    | Pass into the def function and calculate LPN for a valid date | 2000-01-01 | 4 |
-    | Pass into the def function and calculate LPN for an invalid date | 2024-02-30 | Error |
-    | Pass into the def function and calculate LPN for an invalid date format | "01/01/2000" | Error |
+| Path | Test Data | Expected Results |
+|------|-----------|-------------------|
+| Pass into the def function and calculate LPN for a valid date | 1990-04-15 | 11 |
+| Pass into the def function and calculate LPN for a valid date | 2000-01-01 | 4 |
+| Pass into the def function and calculate LPN for an invalid date | 2024-02-30 | Error |
+| Pass into the def function and calculate LPN for an invalid date format | "01/01/2000" | Error |
 
-### get_gen Module
+# get_gen Module Test Cases
 
-    | Path | Test Data | Expected Results |
-    |------|-----------|-------------------|
-    | Pass into the def function and determine generation for a valid date within the Greatest Generation range | 1925-06-15 | Greatest Generation |
-    | Pass into the def function and determine generation for a valid date within the Silent Generation range | 1930-06-15 | Silent Generation |
-    | Pass into the def function and determine generation for a valid date within the Baby Boomers range | 1950-06-15 | Baby Boomers |
-    | Pass into the def function and determine generation for a valid date within the Generation X range | 1975-06-15 | Generation X |
-    | Pass into the def function and determine generation for a valid date within the Millennials range | 1990-06-15 | Millennials |
-    | Pass into the def function and determine generation for a valid date within the Generation Z range | 2000-06-15 | Generation Z |
-    | Pass into the def function and determine generation for a valid date within the Generation Alpha range | 2020-06-15 | Generation Alpha |
-    | Pass into the def function and determine generation for a date before the defined ranges | 1900-06-15 | Unknown Generation |
-    | Pass into the def function and determine generation for a date after the defined ranges | 2025-06-15 | Unknown Generation |
-    | Pass into the def function and determine generation for an invalid date | 2024-02-30 | Error |
+| Path | Test Data | Expected Results |
+|------|-----------|-------------------|
+| Pass into the def function and determine generation for a valid date within the Greatest Generation range | 1925-06-15 | Greatest Generation |
+| Pass into the def function and determine generation for a valid date within the Silent Generation range | 1930-06-15 | Silent Generation |
+| Pass into the def function and determine generation for a valid date within the Baby Boomers range | 1950-06-15 | Baby Boomers |
+| Pass into the def function and determine generation for a valid date within the Generation X range | 1975-06-15 | Generation X |
+| Pass into the def function and determine generation for a valid date within the Millennials range | 1990-06-15 | Millennials |
+| Pass into the def function and determine generation for a valid date within the Generation Z range | 2000-06-15 | Generation Z |
+| Pass into the def function and determine generation for a valid date within the Generation Alpha range | 2020-06-15 | Generation Alpha |
+| Pass into the def function and determine generation for a date before the defined ranges | 1900-06-15 | Unknown Generation |
+| Pass into the def function and determine generation for a date after the defined ranges | 2025-06-15 | Unknown Generation |
+| Pass into the def function and determine generation for an invalid date | 2024-02-30 | Error |
+
 
 ## Test Implementation and Test Execution
 
